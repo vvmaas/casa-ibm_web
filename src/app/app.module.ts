@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -17,12 +19,14 @@ import { PopUpBoxComponent } from './components/pop-up-box/pop-up-box.component'
     HomeComponent,
     ReservarComponent,
     EditarComponent,
-    PopUpBoxComponent
+    PopUpBoxComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [HomeComponent],
   bootstrap: [AppComponent]

@@ -1,7 +1,17 @@
 <div class="home-container">
-    <h2>
-        Reservas
-    </h2>
+    <div class="home-top">
+        <div class="top-left">
+            <div class="home-title">
+                <p>Casa IBM</p>
+            </div>
+            <button class="create-button" routerLinkActive="active">
+                <a routerLink="/reservar">Fazer nova reserva</a>
+            </button>
+        </div>
+        <div class="top-right">
+                <button type="submit" class="search-button">Buscar</button>
+        </div>
+    </div>
 
     <div class="home-no-items" *ngIf="list.length == 0">
         Não há reservas
@@ -10,10 +20,10 @@
         <div class="reserva-card" *ngFor="let item of list">
 
             <div class="buttons" *ngIf="item.status != cancelada">
-                <button class="edit-button">
-                    Editar
+                <button class="edit-button" routerLinkActive="active">
+                    <a (click)="goToEdit(item)">Editar</a>
                 </button>
-                <button class="delete-button" (click)="popUpService.add(item, 'Deseja cancelar a reserva de id {{item.id}}?', 'Essa ação não é reversível')">
+                <button class="delete-button" (click)="popUpService.add(item, 'Deseja cancelar reserva?', 'ATENÇÃO: Essa ação não é reversível')">
                     Cancelar
                 </button>
             </div>

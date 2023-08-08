@@ -4,12 +4,62 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-
+    min-width: 839px;
 }
 
-h2 {
-    font-size: 3rem;
+.home-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 40px;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-right input {
+    background-color: rgba(240, 248, 255, 0.481);
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+.search-button {
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: rgba(240, 248, 255, 0.904);
+    background-color: #2a33e2c1;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #1920a3ce;
+}
+
+
+.create-button {
+    min-height: fit-content;
+    color: rgba(240, 248, 255, 0.904);
+    background-color: #2a33e2c1;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-button:hover {
+    background-color: #1920a3ce;
+}
+
+.home-title {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .reserva-cards {

@@ -7,7 +7,9 @@
     box-shadow: 2px 0 10px 0 rgba(127, 115, 115, 0.1);
     border-radius: 50px;
     width: 75vw;
+    min-width: 940px;
     height: 75vh;
     flex-shrink: 0;
     backdrop-filter: blur(3px);
+    margin-bottom: 50px;
 }

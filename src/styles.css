@@ -72,7 +72,9 @@ textarea {
 
     resize: none; /*remove the resize handle on the bottom right*/
 }
-
+input{
+	outline: none;
+}
 button{ 
     text-align: center;
 }

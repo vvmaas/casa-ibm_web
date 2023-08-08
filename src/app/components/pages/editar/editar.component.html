@@ -1,1 +1,34 @@
-<p>editar works!</p>
+<div class="editar-container">
+    <div class="editar-top">
+        <div class="top-left">
+            <div class="editar-title">
+                <p>Editar reserva</p>
+            </div>
+            <button class="return-button" routerLinkActive="active">
+                <a routerLink="/home"> Voltar</a>
+            </button>
+        </div>
+    </div>
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
+        <label for="nome-hospede">Nome do hóspede</label>
+        <input id="nome-hospede" type="text" formControlName="nomeHospede">
+
+        <label for="data-inicio">Data de chegada</label>
+        <input id="data-inicio" type="date" formControlName="dataInicio">
+
+        <label for="data-fim">Data de partida</label>
+        <input id="data-fim" type="date" formControlName="dataFim">
+
+        <label for="quantidade-pessoas">Número de pessoas</label>
+        <input id="quantidade-pessoas" type="number" formControlName="quantidadePessoas">
+
+        <label for="status">Status</label>
+        <select formControlName="status">
+            <option value="CONFIRMADA">CONFIRMADA</option>
+            <option value="PENDENTE">PENDENTE</option>
+        </select>
+
+        <button type="submit" class="primary">Salvar</button>
+    </form>
+    
+</div>

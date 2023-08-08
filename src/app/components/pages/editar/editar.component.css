@@ -1,0 +1,76 @@
+.editar-container {
+    width: fit-content;
+    height: fit-content;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 839px;
+}
+
+.editar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.return-button {
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: rgba(240, 248, 255, 0.904);
+    background-color: #2a33e2c1;
+
+    cursor: pointer;
+}
+
+.return-button:hover {
+    background-color: #1920a3ce;
+}
+
+.editar-title {
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    padding-right: 12px;
+    margin-right: 12px;
+    margin-bottom: 5px;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+input, select {
+    background-color: rgba(240, 248, 255, 0.481);
+    padding: 4px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+}
+
+label {
+    margin-left: 5px;
+}
+
+form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.primary {
+    width: 50%;
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: rgba(240, 248, 255, 0.904);
+    border: 1px solid rgba(240, 248, 255, 0.571);
+    background-color: #2a33e2c1;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+.primary:hover {
+    background-color: #1920a3ce;
+}
