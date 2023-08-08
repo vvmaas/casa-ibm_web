@@ -12,4 +12,17 @@
     flex-shrink: 0;
     backdrop-filter: blur(3px);
     margin-bottom: 50px;
+
+}
+
+@media(max-width: 960px){
+
+    .container{
+        background-color: rgba(238, 215, 209, 0.552);
+        min-width: none;
+         border-radius: 0px;
+        width: 100vw;
+        height: 90vh;
+        margin-bottom: 0;
+    }
 }

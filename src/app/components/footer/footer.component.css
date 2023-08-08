@@ -26,3 +26,10 @@ footer {
     margin: auto;
     cursor: default;
   }
+
+  @media(max-width: 960px){
+
+    footer{
+        display: none;
+    }
+}

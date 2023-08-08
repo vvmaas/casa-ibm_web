@@ -34,3 +34,21 @@
   .message p {
     font-size: 0.9em;
   }
+
+  @media(max-width: 960px){
+    .message {
+      width: 50%;
+      margin-left: 25%;
+      left: 0;
+      border-radius: 0;
+    }
+}
+
+@media(max-width: 450px){
+  .message {
+    width: 100vw;
+    margin-left: 0;
+    left: 0;
+    border-radius: 0;
+  }
+}

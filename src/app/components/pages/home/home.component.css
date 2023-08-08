@@ -66,7 +66,6 @@
     align-items: center;
     justify-content: flex-start;
     width: 50%;
-
 }
 
 .show-all-button {
@@ -179,4 +178,81 @@
 
 .CANCELADA {
     color: rgb(205, 55, 32);
+}
+
+@media(max-width: 960px){
+    .home-container{ 
+        width: 100vw;
+        height: 90vh;
+        min-width: none;
+        margin: none;
+    }
+
+    .home-top {
+        width: 100vw;
+        height: 10vh;
+        padding: 0 15px;
+        margin: 0 auto 30px auto;
+        background-color: #9e6767b7;
+    }
+
+    .top-left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .top-right input {
+        justify-content: flex-end;
+        padding: 2px 7px;
+        width: 20vw;
+        margin-right: 5px;
+    }
+
+    .top-right {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .search-button {
+        margin: 0;
+    }
+
+    .create-button {
+        min-height: fit-content;
+        color: rgba(240, 248, 255, 0.904);
+        background-color: #2a33e2c1;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .home-title {
+        display: none;
+    }
+
+    .home-no-items {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        margin-left: 0;
+        font-size: 1.5rem;  
+    }
+
+    .reserva-card {
+        width: 90vw;
+        margin: auto;
+        background-color: rgba(240, 248, 255, 0.481);
+        border-radius: 20px;
+        padding: 1.5%;
+        padding-bottom: 1%;
+        margin-bottom: 30px; 
+    }
+
+    .show-all-wrapper {
+        width: 100%;
+        justify-content: center;
+    }
 }
