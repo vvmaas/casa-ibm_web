@@ -1,4 +1,4 @@
 export const environment = {
-    production: true,
-    baseApiUrl: "http://localhost:8080"
+    production: false,
+    baseApiUrl: "https://casaibm-api.onrender.com" //localhost:8080 se estiver rodando localmente
 };
