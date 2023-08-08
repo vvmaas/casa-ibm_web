@@ -10,8 +10,8 @@
         </div>
     </div>
     <form [formGroup]="applyForm" (submit)="submitApplication()">
-        <label for="nome-hospede">Nome do hóspede</label>
-        <input id="nome-hospede" type="text" formControlName="nomeHospede">
+
+        <input id="nome-hospede" type="text" placeholder="Nome do hóspede" formControlName="nomeHospede">
 
         <label for="data-inicio">Data de chegada</label>
         <input id="data-inicio" type="date" formControlName="dataInicio">
@@ -19,9 +19,7 @@
         <label for="data-fim">Data de partida</label>
         <input id="data-fim" type="date" formControlName="dataFim">
 
-        <label for="quantidade-pessoas">Número de pessoas</label>
-        <input id="quantidade-pessoas" type="number" formControlName="quantidadePessoas">
-
+        <input id="quantidade-pessoas" type="text" placeholder="Número de pessoas" formControlName="quantidadePessoas">
 
         <button type="submit" class="primary">Reservar</button>
     </form>

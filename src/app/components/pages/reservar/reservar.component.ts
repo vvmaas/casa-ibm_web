@@ -18,9 +18,9 @@ export class ReservarComponent {
     
   applyForm = new FormGroup({
     nomeHospede: new FormControl(''),
-    dataInicio: new FormControl(new Date()),
-    dataFim: new FormControl(new Date()),
-    quantidadePessoas: new FormControl(0)
+    dataInicio: new FormControl(null),
+    dataFim: new FormControl(null),
+    quantidadePessoas: new FormControl('')
   })
 
   constructor(public service: ReservaService, private router: Router, private messagesService: MessagesService) {}
@@ -28,9 +28,9 @@ export class ReservarComponent {
   submitApplication() {
     this.body = {
       nomeHospede: this.applyForm.value.nomeHospede ?? '',
-      dataInicio: this.applyForm.value.dataInicio ?? new Date(),
-      dataFim: this.applyForm.value.dataFim ?? new Date(),
-      quantidadePessoas: this.applyForm.value.quantidadePessoas ?? 1
+      dataInicio: this.applyForm.value.dataInicio ?? undefined,
+      dataFim: this.applyForm.value.dataFim ?? undefined,
+      quantidadePessoas: Number(this.applyForm.value.quantidadePessoas) ?? 1
     }
     console.log(this.body);
     

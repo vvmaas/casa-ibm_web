@@ -7,6 +7,13 @@
     min-width: 839px;
 }
 
+.home-no-items {
+    margin-top: 5%;
+    margin-left: 10px;
+    font-size: 2rem;
+    filter: opacity(0.4);
+}
+
 .home-top {
     display: flex;
     align-items: center;
@@ -51,6 +58,28 @@
 }
 
 .create-button:hover {
+    background-color: #1920a3ce;
+}
+
+.show-all-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+
+}
+
+.show-all-button {
+    max-height: 70px;
+    color: rgba(240, 248, 255, 0.904);
+    background-color: #2a33e2c1;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.show-all-button:hover {
     background-color: #1920a3ce;
 }
 

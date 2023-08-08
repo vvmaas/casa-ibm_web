@@ -2,7 +2,7 @@
     <div class="editar-top">
         <div class="top-left">
             <div class="editar-title">
-                <p>Editar reserva</p>
+                <h1>Editar reserva</h1>
             </div>
             <button class="return-button" routerLinkActive="active">
                 <a routerLink="/home"> Voltar</a>
@@ -10,23 +10,28 @@
         </div>
     </div>
     <form [formGroup]="applyForm" (submit)="submitApplication()">
-        <label for="nome-hospede">Nome do hóspede</label>
-        <input id="nome-hospede" type="text" formControlName="nomeHospede">
+
+        <input id="nome-hospede" type="text" formControlName="nomeHospede" placeholder="Nome do hóspede">
+        <label for="nome-hospede" class="bottom-label">Valor atual: {{params.nomeHospede}}</label>
 
         <label for="data-inicio">Data de chegada</label>
         <input id="data-inicio" type="date" formControlName="dataInicio">
+        <label for="data-inicio" class="bottom-label">Valor atual: {{params.dataInicio}}</label>
 
         <label for="data-fim">Data de partida</label>
         <input id="data-fim" type="date" formControlName="dataFim">
+        <label for="data-fim" class="bottom-label">Valor atual: {{params.dataFim}}</label>
 
-        <label for="quantidade-pessoas">Número de pessoas</label>
-        <input id="quantidade-pessoas" type="number" formControlName="quantidadePessoas">
+        <input id="quantidade-pessoas" type="number" placeholder="Número de pessoas" formControlName="quantidadePessoas">
+        <label for="quantidade-pessoas" class="bottom-label">Valor atual: {{params.quantidadePessoas}}</label>
 
         <label for="status">Status</label>
-        <select formControlName="status">
+        <select formControlName="status" >
+            <option disabled="disabled">Selecione uma opção</option>
             <option value="CONFIRMADA">CONFIRMADA</option>
             <option value="PENDENTE">PENDENTE</option>
         </select>
+        <label for="status" class="bottom-label">Valor atual: {{params.status}}</label>
 
         <button type="submit" class="primary">Salvar</button>
     </form>

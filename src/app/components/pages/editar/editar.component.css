@@ -46,8 +46,13 @@ input, select {
     background-color: rgba(240, 248, 255, 0.481);
     padding: 4px 10px;
     border-radius: 10px;
-    margin-bottom: 10px;
     margin-top: 4px;
+}
+
+.bottom-label {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-size: 0.8rem;
 }
 
 label {
