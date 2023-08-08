@@ -1,4 +1,4 @@
 export const environment = {
-    production: true,
+    production: false,
     baseApiUrl: "https://casaibm-api.onrender.com"
 };
