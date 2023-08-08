@@ -20,7 +20,7 @@ export class ReservarComponent {
     nomeHospede: new FormControl(''),
     dataInicio: new FormControl(null),
     dataFim: new FormControl(null),
-    quantidadePessoas: new FormControl('')
+    quantidadePessoas: new FormControl(null)
   })
 
   constructor(public service: ReservaService, private router: Router, private messagesService: MessagesService) {}
@@ -30,7 +30,7 @@ export class ReservarComponent {
       nomeHospede: this.applyForm.value.nomeHospede ?? '',
       dataInicio: this.applyForm.value.dataInicio ?? undefined,
       dataFim: this.applyForm.value.dataFim ?? undefined,
-      quantidadePessoas: Number(this.applyForm.value.quantidadePessoas) ?? 1
+      quantidadePessoas: this.applyForm.value.quantidadePessoas ?? undefined
     }
     console.log(this.body);
     

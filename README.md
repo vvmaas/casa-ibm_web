@@ -1,27 +1,30 @@
 # casa-ibm_web
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Essa aplicação front-end em Angular foi desenvolvida para consumir dados de uma API que viabilizar a reserva de hospedagens em uma casa de temporada. Conta com recursos que facilitam a manipulação e listagem das informações referentes às reservas.
 
-## Development server
+A API pode ser encontrada em: https://github.com/vvmaas/casa-ibm_api
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instalação local
 
-## Code scaffolding
+Para configurar e executar a aplicação localmente, siga estas etapas:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Certifique-se de ter o Node.js instalado em sua máquina. Se necessário, você pode baixá-lo [aqui](https://nodejs.org).
 
-## Build
+2. Clone este repositório para o seu ambiente local.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. Instale as dependências do projeto:
 
-## Running unit tests
+   ```
+   npm install
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+5. Configure o arquivo `src/environments/environment.ts`, inserindo a URL base fornecida no repositório back-end. Verifique se a URL está correta para estabelecer a conexão adequada com o back-end.
 
-## Running end-to-end tests
+6. Inicie o servidor de desenvolvimento:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```
+   npm run start
+   ```
 
-## Further help
+7. Abra o seu navegador da web e acesse `http://localhost:4200` para visualizar o aplicativo em execução.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
