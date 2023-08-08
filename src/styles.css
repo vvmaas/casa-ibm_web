@@ -35,6 +35,9 @@ time, mark, audio, video {
 	text-decoration: none;
 	text-indent: 0;
 }
+*::-webkit-scrollbar {
+	display: none;
+  }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
