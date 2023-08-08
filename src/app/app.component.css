@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 215, 209, 0.69);
+    box-shadow: 2px 0 10px 0 rgba(127, 115, 115, 0.1);
+    border-radius: 50px;
+    width: 75vw;
+    height: 75vh;
+    flex-shrink: 0;
+    backdrop-filter: blur(3px);
+}

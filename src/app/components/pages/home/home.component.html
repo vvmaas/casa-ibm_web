@@ -1,0 +1,36 @@
+<div class="home-container">
+    <h2>
+        Reservas
+    </h2>
+
+    <div class="home-no-items" *ngIf="list.length == 0">
+        Não há reservas
+    </div>
+    <div class="reserva-cards">
+        <div class="reserva-card" *ngFor="let item of list">
+
+            <div class="buttons" *ngIf="item.status != cancelada">
+                <button class="edit-button">
+                    Editar
+                </button>
+                <button class="delete-button" (click)="popUpService.add(item, 'Deseja cancelar a reserva de id {{item.id}}?', 'Essa ação não é reversível')">
+                    Cancelar
+                </button>
+            </div>
+            <div class="buttons" *ngIf="item.status == cancelada"></div>
+
+            <div class="info">
+                <div class="reserva-card-esquerda">
+                    <p>id: <span>{{item.id}}</span></p>
+                    <p>Hóspede: <span>{{item.nomeHospede}}</span></p>
+                    <p><span>{{item.quantidadePessoas}}</span> pessoas</p>
+                </div>
+                <div class="reserva-card-direita">
+                    <p>Chegada: <span>{{item.dataInicio}}</span></p>
+                    <p>Saída: <span>{{item.dataFim}}</span></p>
+                    <p><span class={{item.status}}>{{item.status}}</span></p>
+                </div>
+            </div>
+    </div>
+    </div>
+</div>

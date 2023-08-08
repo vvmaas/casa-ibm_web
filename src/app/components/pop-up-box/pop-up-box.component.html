@@ -1,0 +1,16 @@
+<div class="container" *ngIf="popUpService.reserva">
+    <div class="Wrapper">
+        <div class="pop-up-text">
+            <h2>{{popUpService.title}}</h2>
+            <p>{{popUpService.message}}</p>
+        </div>
+        <div class="pop-up-buttons">
+            <button class="cancel" (click)="popUpService.clear()">
+                Voltar
+            </button>
+            <button class="confirm" (click)="cancel(popUpService.reserva)">
+                Confirmar
+            </button>
+        </div>
+    </div>
+</div>

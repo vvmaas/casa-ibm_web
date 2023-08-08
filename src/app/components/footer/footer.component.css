@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px 50px 0 0;
+    z-index: 7;
+    margin: auto;
+    width: 45vw;
+    height: 15vh;
+    max-height: 80px;
+    background-color: #decdc774;
+    backdrop-filter: blur(3px);
+  }
+  
+  footer span {
+    font-weight: bold;
+    color: #545cfb;
+    cursor: default;
+  }
+  
+  footer p {
+    color: #181818;
+    margin: auto;
+    cursor: default;
+  }
