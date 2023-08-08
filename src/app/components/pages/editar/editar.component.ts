@@ -3,6 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 
 import { Reserva } from 'src/app/models/Reserva';
 import { ReservaService } from 'src/app/service/reserva.service';
+import { MessagesService } from 'src/app/service/message.service';
 
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -23,7 +24,7 @@ export class EditarComponent {
     status: new FormControl('CONFIRMADA')
   })
 
-  constructor(private route: ActivatedRoute, private service: ReservaService,  private router: Router) {}
+  constructor(private route: ActivatedRoute, private service: ReservaService,  private router: Router,  private messagesService: MessagesService) {}
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
@@ -50,9 +51,10 @@ export class EditarComponent {
     this.service.edit(this.body).subscribe({
       next: () => {
         this.router.navigate(['/home'])
+        this.messagesService.add("Reserva atualizada com sucesso !", "Mudanças salvas");
       },
       error: (error) => {
-        
+        this.messagesService.add(error.error.message, "Não foi possível atualizar reserva");
       }
     })
   }

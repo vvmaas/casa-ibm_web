@@ -11,6 +11,7 @@ import { ReservarComponent } from './components/pages/reservar/reservar.componen
 import { EditarComponent } from './components/pages/editar/editar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PopUpBoxComponent } from './components/pop-up-box/pop-up-box.component';
+import { MessageComponent } from './components/message/message.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { PopUpBoxComponent } from './components/pop-up-box/pop-up-box.component'
     ReservarComponent,
     EditarComponent,
     PopUpBoxComponent,
+    MessageComponent,
   ],
   imports: [
     BrowserModule,
