@@ -184,8 +184,8 @@
     .home-container{ 
         width: 100vw;
         height: 90vh;
-        min-width: none;
-        margin: none;
+        min-width: 0;
+        margin: 0;
     }
 
     .home-top {
