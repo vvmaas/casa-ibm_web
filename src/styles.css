@@ -93,3 +93,9 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
+@media (max-width: 960px){
+	body {
+		justify-content: flex-end;
+	}
+}
