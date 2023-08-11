@@ -4,11 +4,11 @@ Essa aplicação front-end em Angular foi desenvolvida para consumir dados de um
 
 ![Screenshot from 2023-08-08 15-57-19](https://github.com/vvmaas/casa-ibm_web/assets/101278719/ee4e4514-6989-4e7d-83b4-d4ecf5c81249)
 
-Link deploy: https://casa-ibm-web.vercel.app
+### Link deploy: https://casa-ibm-web.vercel.app
 
-Link API: https://casaibm-api.onrender.com
+Requisições nessa aplicação podem demorar até 2 minutos para responder devido ao deploy feito em modalidade gratuita do Render.
 
-Link repositório back-end: https://github.com/vvmaas/casa-ibm_api
+### Link repositório back-end: https://github.com/vvmaas/casa-ibm_api
 
 ## Instalação local
 
